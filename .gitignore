@@ -1,0 +1,12 @@
+# Vim swap files
+.*.sw?
+.sw?
+
+# Qt Creator generated files
+episkopi.config
+episkopi.creator
+episkopi.creator.shared
+episkopi.creator.user
+episkopi.files
+episkopi.includes
+

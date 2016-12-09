@@ -1,0 +1,7 @@
+<library path="lib/libobstacle_avoidance_nodelet">
+  <class name="ObstacleAvoidanceNodelet" type="ObstacleAvoidanceNodelet" base_class_type="nodelet::Nodelet">
+    <description>
+      Parrot S.L.A.M.dunk obstacle avoidance example
+    </description>
+  </class>
+</library>

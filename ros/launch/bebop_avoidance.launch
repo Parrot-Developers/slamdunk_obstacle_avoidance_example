@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  <remap from="/bebop_node/pilotingVelocity" to="/bebop_node/pilotingVelocityWithAvoidance"/>
+  <include file="$(find slamdunk_bebop_robot)/launch/bebop_nodelet.launch" />
+
+  <include file="$(find slamdunk_obstacle_avoidance_example)/launch/bebop_avoidance_config.launch" />
+
+  <remap from="/bebop_node/pilotingVelocity" to="/bebop_node/pilotingVelocity"/>
+  <remap from="/pilotingVelocityWithAvoidance" to="/bebop_node/pilotingVelocityWithAvoidance"/>
+  <node name="obstacle_avoidance_node" pkg="slamdunk_obstacle_avoidance_example" type="obstacle_avoidance_node" output="screen" />
+
+</launch>
